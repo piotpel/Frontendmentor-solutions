@@ -1,0 +1,176 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 75%;
+    height: 60%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+}
+
+.card-text-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-text {
+    padding: 50px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.main-heading {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.purple-text {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-paragraph {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-family: 'Inter', sans-serif;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.stat-heading {
+    color: hsla(0, 0%, 100%, 0.4);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.stats-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+}
+
+.card-img {
+    width: 50%;
+    background: url("./images/image-header-desktop.jpg");
+}
+
+.img-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(113, 2, 165, 0.582);
+}
+
+.attribution {
+    width: 100%;
+    height: 2%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1275px) {
+    h2 {
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    .main-heading {
+        font-size: 26px;
+    }
+
+    .main-paragraph {
+        font-size: 12px;
+    }
+
+    .stat-heading {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .stats-div {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .card {
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .card-text-div {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+
+    .card-text {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .main-heading {
+        font-size: 26px;
+    }
+
+    .main-paragraph {
+        font-size: 15px;
+    }
+
+    .stats-div {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-content: stretch;
+    }
+
+    .stat-heading {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+
+    .card-img {
+        height: 30%;
+        width: 100%;
+    }
+}
